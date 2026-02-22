@@ -211,9 +211,9 @@
     }
   },
   "instructions_to_main_agent": [
+    "INSTALL DEPENDENCIES: `yarn add chart.js react-chartjs-2`. These are required by the prompt.",
+    "ORGANIZE FOLDERS: Create `src/components/layout`, `src/components/reports`, `src/components/charts`, `src/components/modal`. Move logic accordingly.",
     "Use existing shadcn components from /app/frontend/src/components/ui/.",
-    "Do NOT install new npm packages. Use what is available (react-chartjs-2 is required, check if installed, if not, assume it's pre-installed or use recharts if available, but prompt says react-chartjs-2).",
-    "Actually, check package.json first. If react-chartjs-2 is missing, prioritize installing it.",
     "Implement 'LocalStorage' to persist the list of reports and user selection.",
     "Ensure the 'Black and Grey' theme is enforced by overriding default shadcn colors in Tailwind config or using specific utility classes defined in 'design_system.colors'.",
     "Use 'lucide-react' for icons (Search, Plus, User, Settings).",
