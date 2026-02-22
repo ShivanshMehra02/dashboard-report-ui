@@ -17,30 +17,30 @@ code {
 
 @layer base {
     :root {
-        --background: 215 28% 9%;
-        --foreground: 210 40% 98%;
-        --card: 215 25% 12%;
-        --card-foreground: 210 40% 98%;
-        --popover: 215 28% 9%;
-        --popover-foreground: 210 40% 98%;
-        --primary: 217 91% 60%;
-        --primary-foreground: 210 40% 98%;
-        --secondary: 215 20% 18%;
-        --secondary-foreground: 210 40% 98%;
-        --muted: 215 20% 18%;
-        --muted-foreground: 215 20% 65%;
-        --accent: 217 91% 60%;
-        --accent-foreground: 210 40% 98%;
+        --background: 260 40% 10%;
+        --foreground: 260 20% 98%;
+        --card: 260 35% 15%;
+        --card-foreground: 260 20% 98%;
+        --popover: 260 40% 12%;
+        --popover-foreground: 260 20% 98%;
+        --primary: 280 70% 65%;
+        --primary-foreground: 260 20% 98%;
+        --secondary: 260 30% 20%;
+        --secondary-foreground: 260 20% 98%;
+        --muted: 260 30% 20%;
+        --muted-foreground: 260 20% 65%;
+        --accent: 280 70% 65%;
+        --accent-foreground: 260 20% 98%;
         --destructive: 0 62.8% 50%;
-        --destructive-foreground: 210 40% 98%;
-        --border: 215 20% 20%;
-        --input: 215 20% 18%;
-        --ring: 217 91% 60%;
-        --chart-1: 217 91% 60%;
-        --chart-2: 199 89% 48%;
-        --chart-3: 215 20% 65%;
-        --chart-4: 215 25% 27%;
-        --chart-5: 172 66% 50%;
+        --destructive-foreground: 260 20% 98%;
+        --border: 260 30% 22%;
+        --input: 260 30% 18%;
+        --ring: 280 70% 65%;
+        --chart-1: 280 70% 65%;
+        --chart-2: 320 70% 60%;
+        --chart-3: 200 70% 55%;
+        --chart-4: 260 30% 35%;
+        --chart-5: 170 60% 50%;
         --radius: 0.75rem;
     }
 }
@@ -50,7 +50,9 @@ code {
         @apply border-border;
     }
     body {
-        @apply bg-slate-900 text-slate-50;
+        background: linear-gradient(135deg, #1a1025 0%, #0f0a1a 50%, #150d20 100%);
+        min-height: 100vh;
+        @apply text-white;
     }
 }
 
@@ -61,16 +63,16 @@ code {
 }
 
 ::-webkit-scrollbar-track {
-    background: #1e293b;
+    background: #1a1025;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #3b82f6;
+    background: #6b21a8;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #60a5fa;
+    background: #9333ea;
 }
 
 @layer base {
