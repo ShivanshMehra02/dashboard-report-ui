@@ -59,6 +59,7 @@ export const BarChart = ({ data }) => {
           pointStyle: 'circle',
           padding: 16,
         },
+        onClick: () => {}, // Disable legend click
       },
       title: {
         display: false,

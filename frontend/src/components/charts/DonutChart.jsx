@@ -37,7 +37,7 @@ export const DonutChart = ({ data }) => {
       legend: {
         position: 'bottom',
         labels: {
-          color: '#a0a0c0',
+          color: '#c0c0e0',
           font: {
             family: 'Inter',
             size: 11,
@@ -53,7 +53,8 @@ export const DonutChart = ({ data }) => {
               return {
                 text: `${label} (${percentage}%)`,
                 fillStyle: datasets[0].backgroundColor[i],
-                strokeStyle: datasets[0].borderColor,
+                fontColor: '#c0c0e0',
+                strokeStyle: 'transparent',
                 lineWidth: 0,
                 hidden: false,
                 index: i,
@@ -62,6 +63,7 @@ export const DonutChart = ({ data }) => {
             });
           },
         },
+        onClick: () => {}, // Disable legend click
       },
       tooltip: {
         backgroundColor: '#2e2e4a',
