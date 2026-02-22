@@ -50,20 +50,21 @@ export const DonutChart = ({ data }) => {
             return chart.data.labels.map((label, i) => {
               const value = datasets[0].data[i];
               const percentage = ((value / total) * 100).toFixed(1);
+              const meta = chart.getDatasetMeta(0);
+              const hidden = meta.data[i] ? meta.data[i].hidden : false;
               return {
                 text: `${label} (${percentage}%)`,
-                fillStyle: datasets[0].backgroundColor[i],
+                fillStyle: hidden ? '#4e4e6a' : datasets[0].backgroundColor[i],
                 fontColor: '#c0c0e0',
                 strokeStyle: 'transparent',
                 lineWidth: 0,
-                hidden: false,
+                hidden: hidden,
                 index: i,
                 pointStyle: 'circle',
               };
             });
           },
         },
-        onClick: () => {}, // Disable legend click
       },
       tooltip: {
         backgroundColor: '#2e2e4a',
