@@ -17,30 +17,30 @@ code {
 
 @layer base {
     :root {
-        --background: 0 0% 4%;
-        --foreground: 0 0% 98%;
-        --card: 0 0% 7%;
-        --card-foreground: 0 0% 98%;
-        --popover: 0 0% 4%;
-        --popover-foreground: 0 0% 98%;
-        --primary: 0 0% 98%;
-        --primary-foreground: 0 0% 9%;
-        --secondary: 0 0% 14.9%;
-        --secondary-foreground: 0 0% 98%;
-        --muted: 0 0% 14.9%;
-        --muted-foreground: 0 0% 63.9%;
-        --accent: 0 0% 14.9%;
-        --accent-foreground: 0 0% 98%;
-        --destructive: 0 62.8% 30.6%;
-        --destructive-foreground: 0 0% 98%;
-        --border: 0 0% 14.9%;
-        --input: 0 0% 14.9%;
-        --ring: 0 0% 83.1%;
-        --chart-1: 0 0% 98%;
-        --chart-2: 0 0% 63%;
-        --chart-3: 0 0% 32%;
-        --chart-4: 0 0% 15%;
-        --chart-5: 0 0% 50%;
+        --background: 215 28% 9%;
+        --foreground: 210 40% 98%;
+        --card: 215 25% 12%;
+        --card-foreground: 210 40% 98%;
+        --popover: 215 28% 9%;
+        --popover-foreground: 210 40% 98%;
+        --primary: 217 91% 60%;
+        --primary-foreground: 210 40% 98%;
+        --secondary: 215 20% 18%;
+        --secondary-foreground: 210 40% 98%;
+        --muted: 215 20% 18%;
+        --muted-foreground: 215 20% 65%;
+        --accent: 217 91% 60%;
+        --accent-foreground: 210 40% 98%;
+        --destructive: 0 62.8% 50%;
+        --destructive-foreground: 210 40% 98%;
+        --border: 215 20% 20%;
+        --input: 215 20% 18%;
+        --ring: 217 91% 60%;
+        --chart-1: 217 91% 60%;
+        --chart-2: 199 89% 48%;
+        --chart-3: 215 20% 65%;
+        --chart-4: 215 25% 27%;
+        --chart-5: 172 66% 50%;
         --radius: 0.75rem;
     }
 }
@@ -50,7 +50,7 @@ code {
         @apply border-border;
     }
     body {
-        @apply bg-zinc-950 text-zinc-50;
+        @apply bg-slate-900 text-slate-50;
     }
 }
 
@@ -61,16 +61,16 @@ code {
 }
 
 ::-webkit-scrollbar-track {
-    background: #18181b;
+    background: #1e293b;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #3f3f46;
+    background: #3b82f6;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #52525b;
+    background: #60a5fa;
 }
 
 @layer base {
