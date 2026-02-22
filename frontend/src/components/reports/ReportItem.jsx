@@ -6,21 +6,21 @@ export const ReportItem = ({ report, isSelected, onSelect }) => {
     <button
       data-testid={`report-item-${report.id}`}
       onClick={() => onSelect(report.id)}
-      className={`w-full text-left p-4 rounded-lg transition-all border ${
+      className={`w-full text-left p-4 rounded-xl transition-all border ${
         isSelected
-          ? 'bg-blue-500/10 border-blue-500/50 shadow-[0_0_20px_rgba(59,130,246,0.1)]'
-          : 'bg-slate-800/30 border-slate-700/30 hover:bg-slate-800/50 hover:border-slate-600/50'
+          ? 'bg-purple-600/20 border-purple-500/50 shadow-[0_0_20px_rgba(147,51,234,0.2)]'
+          : 'bg-purple-900/10 border-purple-800/20 hover:bg-purple-800/20 hover:border-purple-700/30'
       }`}
     >
       <div className="flex items-start gap-3">
         {/* Icon */}
         <div
           className={`mt-0.5 h-8 w-8 rounded-lg flex items-center justify-center flex-shrink-0 ${
-            isSelected ? 'bg-blue-500' : 'bg-slate-700'
+            isSelected ? 'bg-gradient-to-br from-purple-500 to-pink-500' : 'bg-purple-900/50'
           }`}
         >
           <FileText
-            className={`h-4 w-4 ${isSelected ? 'text-white' : 'text-slate-400'}`}
+            className={`h-4 w-4 ${isSelected ? 'text-white' : 'text-purple-400'}`}
           />
         </div>
 
@@ -28,19 +28,19 @@ export const ReportItem = ({ report, isSelected, onSelect }) => {
         <div className="flex-1 min-w-0">
           <h3
             className={`text-sm font-medium truncate ${
-              isSelected ? 'text-blue-400' : 'text-slate-300'
+              isSelected ? 'text-white' : 'text-purple-100'
             }`}
           >
             {report.title}
           </h3>
-          <p className="text-xs text-slate-500 truncate mt-0.5">
+          <p className="text-xs text-purple-400/70 truncate mt-0.5">
             {report.subtitle}
           </p>
         </div>
 
         {/* Selection indicator */}
         {isSelected && (
-          <div className="w-2 h-2 rounded-full bg-blue-400 flex-shrink-0 mt-2" />
+          <div className="w-2 h-2 rounded-full bg-pink-400 flex-shrink-0 mt-2" />
         )}
       </div>
     </button>

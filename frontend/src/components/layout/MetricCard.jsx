@@ -6,13 +6,13 @@ export const MetricCard = ({ title, value, suffix = '', type = 'default', icon: 
   const getValueColor = () => {
     switch (type) {
       case 'danger':
-        return 'text-rose-400';
+        return 'text-pink-400';
       case 'success':
         return 'text-emerald-400';
       case 'warning':
         return 'text-amber-400';
       default:
-        return 'text-blue-400';
+        return 'text-white';
     }
   };
 
@@ -30,15 +30,15 @@ export const MetricCard = ({ title, value, suffix = '', type = 'default', icon: 
   return (
     <div
       data-testid={`metric-card-${title.toLowerCase().replace(/\s+/g, '-')}`}
-      className="bg-slate-800/50 border border-slate-700/50 rounded-xl p-6 flex flex-col justify-between h-32 relative overflow-hidden group hover:border-blue-500/30 transition-all hover:shadow-[0_0_20px_rgba(59,130,246,0.1)]"
+      className="bg-[#1e1432]/80 border border-purple-800/30 rounded-2xl p-6 flex flex-col justify-between h-32 relative overflow-hidden group hover:border-purple-600/50 transition-all hover:shadow-[0_0_30px_rgba(147,51,234,0.15)]"
     >
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-24 h-24 bg-blue-500/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:bg-blue-500/10 transition-all" />
+      <div className="absolute top-0 right-0 w-32 h-32 bg-purple-600/5 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:bg-purple-600/10 transition-all" />
 
       {/* Header with icon */}
       <div className="flex items-center gap-2 relative z-10">
-        <IconComponent className="h-4 w-4 text-slate-500" />
-        <span className="text-xs font-medium uppercase tracking-wider text-slate-500">
+        <IconComponent className="h-4 w-4 text-purple-400/70" />
+        <span className="text-xs font-medium uppercase tracking-wider text-purple-300/70">
           {title}
         </span>
       </div>
