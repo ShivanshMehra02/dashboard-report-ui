@@ -24,7 +24,7 @@ npm run build
 ### 1. Clone Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ShivanshMehra02/uptime-dashboard-ui.git
 cd dashboard-report-ui
 ```
 
