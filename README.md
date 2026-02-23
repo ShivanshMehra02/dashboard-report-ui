@@ -25,7 +25,7 @@ npm run build
 
 ```bash
 git clone https://github.com/ShivanshMehra02/uptime-dashboard-ui.git
-cd dashboard-report-ui
+cd uptime-dashboard-ui
 ```
 
 ### 2. Install Dependencies
